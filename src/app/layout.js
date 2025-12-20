@@ -1,4 +1,7 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import "./globals.css";
+import TobBar from "@/components/TobBar";
 
 export const metadata = {
   title: "MFT Time Picker",
@@ -7,8 +10,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" >
       <body>
+        <TobBar />
         {children}
       </body>
     </html>
