@@ -9,11 +9,10 @@ import DataManager from "@/app/lib/DataManager";
 */
 
 export async function GET(req, { params }) {
-    const cls = DataManager.getClassById(params.id);
-    console.log('cls:', cls)
     try {
-        const cls = DataManager.getClassById(params.id);
-        console.log(cls)
+        const { id } = await params;
+        const cls = DataManager.getClassById(id);
+        console.log('cls:', cls)
         if (!cls) return NextResponse.json({ error: "Not found" }, { status: 404 });
         return NextResponse.json(cls);
     } catch (err) {
@@ -23,12 +22,13 @@ export async function GET(req, { params }) {
 
 export async function POST(req, { params }) {
     try {
+        const { id } = await params;
         const body = await req.json();
         const { username, day, time } = body;
         if (!username || !day || !time) {
             return NextResponse.json({ error: "username, day and time required" }, { status: 400 });
         }
-        const slot = DataManager.addPick(params.id, username, day, time);
+        const slot = DataManager.addPick(id, username, day, time);
         return NextResponse.json(slot);
     } catch (err) {
         return NextResponse.json({ error: err.message }, { status: 500 });
@@ -37,12 +37,13 @@ export async function POST(req, { params }) {
 
 export async function PATCH(req, { params }) {
     try {
+        const { id } = await params;
         const body = await req.json();
         const { day, time, enabled } = body;
         if (!day || !time || typeof enabled === "undefined") {
             return NextResponse.json({ error: "day,time,enabled required" }, { status: 400 });
         }
-        const slot = DataManager.toggleSlot(params.id, day, time, enabled);
+        const slot = DataManager.toggleSlot(id, day, time, enabled);
         return NextResponse.json(slot);
     } catch (err) {
         return NextResponse.json({ error: err.message }, { status: 500 });
@@ -51,13 +52,14 @@ export async function PATCH(req, { params }) {
 
 export async function DELETE(req, { params }) {
     try {
+        const { id } = await params;
         const url = new URL(req.url);
         const mode = url.searchParams.get("mode"); // ?mode=remove => delete class entirely
         if (mode === "remove") {
-            DataManager.removeClass(params.id);
+            DataManager.removeClass(id);
             return NextResponse.json({ ok: true });
         } else {
-            DataManager.clearClass(params.id);
+            DataManager.clearClass(id);
             return NextResponse.json({ ok: true });
         }
     } catch (err) {
