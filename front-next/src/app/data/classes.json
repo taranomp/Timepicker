@@ -1,0 +1,264 @@
+{
+  "classes": [
+    {
+      "id": "1",
+      "title": "englishA1",
+      "calendar": {
+        "saturday": {
+          "3-5": {
+            "active": false,
+            "count": 0,
+            "users": []
+          },
+          "5-7": {
+            "active": true,
+            "count": 2,
+            "users": [
+              "ali",
+              "reza"
+            ]
+          },
+          "7-9": {
+            "active": true,
+            "count": 1,
+            "users": [
+              "ali"
+            ]
+          }
+        },
+        "sunday": {
+          "3-5": {
+            "active": false,
+            "count": 0,
+            "users": []
+          },
+          "5-7": {
+            "active": false,
+            "count": 0,
+            "users": []
+          },
+          "7-9": {
+            "active": false,
+            "count": 0,
+            "users": []
+          }
+        },
+        "monday": {
+          "3-5": {
+            "active": false,
+            "count": 0,
+            "users": []
+          },
+          "5-7": {
+            "active": false,
+            "count": 0,
+            "users": []
+          },
+          "7-9": {
+            "active": false,
+            "count": 0,
+            "users": []
+          }
+        },
+        "tuesday": {
+          "3-5": {
+            "active": true,
+            "count": 0,
+            "users": []
+          },
+          "5-7": {
+            "active": false,
+            "count": 0,
+            "users": []
+          },
+          "7-9": {
+            "active": false,
+            "count": 0,
+            "users": []
+          }
+        },
+        "wednesday": {
+          "3-5": {
+            "active": false,
+            "count": 0,
+            "users": []
+          },
+          "5-7": {
+            "active": false,
+            "count": 0,
+            "users": []
+          },
+          "7-9": {
+            "active": false,
+            "count": 0,
+            "users": []
+          }
+        },
+        "thursday": {
+          "3-5": {
+            "active": true,
+            "count": 0,
+            "users": []
+          },
+          "5-7": {
+            "active": false,
+            "count": 0,
+            "users": []
+          },
+          "7-9": {
+            "active": true,
+            "count": 0,
+            "users": []
+          }
+        },
+        "friday": {
+          "3-5": {
+            "active": true,
+            "count": 0,
+            "users": []
+          },
+          "5-7": {
+            "active": true,
+            "count": 0,
+            "users": []
+          },
+          "7-9": {
+            "active": false,
+            "count": 0,
+            "users": []
+          }
+        }
+      },
+      "createdAt": "2025-11-08T17:46:58.525Z"
+    },
+    {
+      "id": "2",
+      "title": "php",
+      "calendar": {
+        "saturday": {
+          "3-5": {
+            "active": true,
+            "count": 2,
+            "users": [
+              "ali",
+              "reza"
+            ]
+          },
+          "5-7": {
+            "active": true,
+            "count": 0,
+            "users": []
+          },
+          "7-9": {
+            "active": true,
+            "count": 0,
+            "users": []
+          }
+        },
+        "sunday": {
+          "3-5": {
+            "active": true,
+            "count": 0,
+            "users": []
+          },
+          "5-7": {
+            "active": true,
+            "count": 0,
+            "users": []
+          },
+          "7-9": {
+            "active": true,
+            "count": 0,
+            "users": []
+          }
+        },
+        "monday": {
+          "3-5": {
+            "active": true,
+            "count": 0,
+            "users": []
+          },
+          "5-7": {
+            "active": true,
+            "count": 0,
+            "users": []
+          },
+          "7-9": {
+            "active": true,
+            "count": 0,
+            "users": []
+          }
+        },
+        "tuesday": {
+          "3-5": {
+            "active": true,
+            "count": 0,
+            "users": []
+          },
+          "5-7": {
+            "active": true,
+            "count": 0,
+            "users": []
+          },
+          "7-9": {
+            "active": true,
+            "count": 0,
+            "users": []
+          }
+        },
+        "wednesday": {
+          "3-5": {
+            "active": true,
+            "count": 0,
+            "users": []
+          },
+          "5-7": {
+            "active": true,
+            "count": 0,
+            "users": []
+          },
+          "7-9": {
+            "active": true,
+            "count": 0,
+            "users": []
+          }
+        },
+        "thursday": {
+          "3-5": {
+            "active": true,
+            "count": 0,
+            "users": []
+          },
+          "5-7": {
+            "active": true,
+            "count": 0,
+            "users": []
+          },
+          "7-9": {
+            "active": true,
+            "count": 0,
+            "users": []
+          }
+        },
+        "friday": {
+          "3-5": {
+            "active": true,
+            "count": 0,
+            "users": []
+          },
+          "5-7": {
+            "active": true,
+            "count": 0,
+            "users": []
+          },
+          "7-9": {
+            "active": true,
+            "count": 0,
+            "users": []
+          }
+        }
+      },
+      "createdAt": "2025-11-08T17:50:42.391Z"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+:root,
+[data-bs-theme="dark"] {
+    --bs-body-bg: #121212;
+    --bs-body-color: #e2e2e2;
+    --bs-primary: #0d6efd;
+    --bs-navbar-bg: #1e1e1e;
+    --bs-navbar-color: #ffffff;
+}
